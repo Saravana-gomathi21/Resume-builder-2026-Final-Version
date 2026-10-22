@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="index.html">
+                <div class="logo">
+                    <h2>S</h2>
+                    <h1>Smart<span class="head-grey">Resume</span></h1>
+                </div>
+            </a>
+        </header>
+        <section class="resume-main">
+            <section class="resume-section" id="resume-section">
+
+            </section>
+            <section class="editor">
+                <div class="editor-heading">
+                    <h2>Edit your resume</h2>
+                    <p>Changes appear instantly in your preview.</p>
+                </div>
+
+                <form id="resume-form">
+                    <fieldset>
+                        <legend>Personal details</legend>
+
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe">
+
+                        <label for="role">Professional title</label>
+                        <input type="text" id="role" name="role" placeholder="Software Developer">
+
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com">
+
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" placeholder="Chennai, India">
+
+                        <label for="linkedin">LinkedIn URL</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="linkedin.com/in/username">
+
+                        <label for="github">GitHub URL</label>
+                        <input type="url" id="github" name="github" placeholder="github.com/username">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Professional summary</legend>
+
+                        <label for="summary">About you</label>
+                        <textarea id="summary" name="summary" rows="4"
+                            placeholder="Write a short professional introduction..."></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Skills and languages</legend>
+
+                        <label for="skills">Technical skills</label>
+                        <textarea id="skills" name="skills" rows="3"
+                            placeholder="JavaScript, HTML, CSS, SQL"></textarea>
+                        <small>Separate each skill with a comma.</small>
+
+                        <label for="languages">Languages</label>
+                        <input type="text" id="languages" name="languages" placeholder="English, Tamil">
+                        <small>Separate each language with a comma.</small>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Education</legend>
+                        <div id="education-list"></div>
+                        <button type="button" class="add-entry" data-add="education">
+                            + Add Education
+                        </button>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Work Experience</legend>
+
+                        <div id="experience-list"></div>
+
+                        <button type="button" class="add-entry" data-add="experience">
+                            + Add Experience
+                        </button>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Projects</legend>
+                        <div id="project-list"></div>
+                        <button type="button" class="add-entry" data-add="project">
+                            + Add Project
+                        </button>
+                    </fieldset>
+                    <div class="editor-actions">
+                        <button type="reset" class="reset-resume">Reset fields</button>
+                        <button type="button" id="print-resume" class="print-resume">
+                            Save resume
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <script type="module" src="editor.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
