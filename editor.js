@@ -256,9 +256,7 @@ function createEntry(type, values = {}) {
         if (list.children.length > 1) {
             container.remove();
         } else {
-            container.querySelectorAll("input, textarea").forEach(field => {
-                field.value = "";
-            });
+            alert("Minimum On Field is Required !");
         }
         updateResume();
     });
@@ -514,6 +512,11 @@ window.addEventListener("pageshow", () => {
     }
 });
 
+
+document.querySelector(".bot").addEventListener("click",(event)=>{
+    event.currentTarget.style.display = "none";
+    document.querySelector(".chat").style.display= "block";
+});
 
 
 function printResume(){

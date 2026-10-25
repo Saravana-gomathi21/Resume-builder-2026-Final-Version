@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Resume Builder</title>
+    <link rel="shortcut icon" href="Smart-Resume-Sparkle-Icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -106,10 +107,32 @@
                 </form>
             </section>
         </section>
+        <section class="bot">
+            <i class="bi bi-robot"></i>
+        </section>
+        <section class="chat">
+            <section class="chatHeader">
+                <div class="chatLogo"><i class="bi bi-robot"></i></div>
+                <h2>Ria</h2>
+            </section>
+            <section class="ChatMain">
+                
+            </section>
+            <section class="chatBar"></section>
+        </section>
     </main>
     <script type="module" src="editor.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script><script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+    <script>
+        $("body").on("click",".chat",function(){
+            $(".chat").draggable();
+        })
+        $(".bot").draggable();
+    </script>
 </body>
 </html>
