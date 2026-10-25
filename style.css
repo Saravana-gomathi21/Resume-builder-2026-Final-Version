@@ -1010,6 +1010,13 @@ footer .foot-span, footer p{
     transform: translateX(120%);
 }
 
+footer {
+    border-top: 1px solid rgba(230, 234, 245, .7);
+}
+
+footer a {
+    transition: color .25s ease;
+}
 
 .hero h2 {
     animation: heroTitleEnter .9s var(--ease-smooth) both;

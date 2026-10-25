@@ -345,7 +345,11 @@ function createEntry(type, values = {}) {
         if (list.children.length > 1) {
             container.remove();
         } else {
+<<<<<<< HEAD
             alert("At least one entry is required.");
+=======
+            alert("Minimum On Field is Required !");
+>>>>>>> 44c25e3 (Final UI)
         }
 
         updateResume();
@@ -796,6 +800,27 @@ function initializeEditor() {
     if (printButton) {
         printButton.addEventListener("click", printResume);
     }
+<<<<<<< HEAD
+=======
+});
+
+
+document.querySelector(".bot").addEventListener("click",(event)=>{
+    event.currentTarget.style.display = "none";
+    document.querySelector(".chat").style.display= "block";
+});
+
+
+function printResume(){
+    window.jsPDF = window.jspdf.jsPDF;
+    let doc = new jsPDF();
+    let resumeTemp = document.querySelector(".resume");
+    doc.html(resumeTemp,{
+        callback: function (doc) {
+            doc.save(`${document.querySelector('[data-resume="name"]').textContent}-resume.pdf`)
+        },x : 1, y : 1, width : 200, windowWidth : 750
+    })
+>>>>>>> 44c25e3 (Final UI)
 }
 
 document.querySelector(".bot")?.addEventListener("click", event => {
