@@ -4,60 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Resume Builder</title>
+    <link rel="shortcut icon" href="Smart-Resume-Sparkle-Icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section class="wrapper">
-            <section class="profile">
-                <div class="image">
-                
+        <header>
+            <a href="index.html">
+                <div class="logo">
+                    <h2>S</h2><h1>Smart<span class="head-grey">Resume</span></h1>
                 </div>
-                <div class="con">
-                    <h1>Smart Resume Builder
-                        <span>Saravana gomathi</span>
-                    </h1>
-                    <p>I’m a web development enthusiast who enjoys creating simple, attractive, 
-                        and user-friendly websites. Through this project, I developed a Smart Resume 
-                        Builder using HTML and CSS, designed to help users create professional and well-structured 
-                        resumes with ease. This project helped me improve my skills in web design, page layout, 
-                        and responsive styling while focusing on simplicity and user experience.
-                    </p>
-                </div>
-            </section>
-            <section class="prblm">
-                <div class="prblChild">
-                    <h2>Challenges Faced</h2>
-                    <ul>
-                       <li> Designing a clean, attractive, and professional layout for the Smart Resume Builder.</li>
-                       <li>Organizing resume-related content in a clear and structured manner using HTML.</li>
-                       <li>Improving my CSS skills, web design techniques, and problem-solving abilities.</li>
-                    </ul>
-                </div>
-                <div class="prblChild">
-                    <h2>Lessons Learned</h2>
-                    <ul>
-                        <li>Improved my HTML and CSS skills by developing the Smart Resume Builder website.</li>
-                        <li>Learned to create a clean, organized, and user-friendly website layout.</li>
-                        <li>Gained a better understanding of CSS styling, spacing, alignment, and visual design.</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="foot">
-                <div class="footChild">
-                    <h2>Gratitude</h2>
-                    <ul>
-                        <li>I sincerely thank all my friends especially Vairasuresh , Shri Ram and all my faculty members.</li>
-                    </ul>
-                </div>
-                <div class="footChild">
-                    <h2>Project Link</h2>
-                    <ul>
-                        <li><a href="https://saravanagomathi-56dwsmuf-8443.zcodecorp.in/HTML_CSS_saravana_gomathi/JavaScript_/Resume%20Builder/">Smart Resume Builder</a></li>
-                    </ul>
-                </div>
+            </a>
+            <nav>
+                <a href="#features" class="nav-btn">Features</a><a href="#about" class="nav-btn">About</a><a href="templates.html" class="nav-btn">Templates</a>
+            </nav>
+            <a href="editor.html"><button class="get-started" id="choose" data-template="custom">Build Resume <i class="bi bi-arrow-up-right"></i></button></a>
+        </header>
+        <section class="hero" id="about">
+            <h2>
+                Your skills.
+                Your story.
+                <span>Your future.</span>
+            </h2>
+            <div class="image-container">
+                <img src="resumeDash.webp" alt="resume">
+            </div>
+            <a href="templates.html"><button class="create-resume">Get Started <i class="bi bi-arrow-right"></i></button></a>
+        </section>
+        <section id="features" class="features">
+            <small>BUILT FOR YOUR SUCCESS</small>
+            <h2>Everything you need to stand 
+                out.</h2>
+            <p>Less formatting. More focus on your future.</p>
+            <section class="card-container">
+                <section class="card">
+                    <div class="icon">✦</div>
+                    <div class="content">
+                        <h3>Professional templates</h3>
+                        <p>Choose a polished layout that reflects your personality 
+                        and career goals.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="icon">↗</div>
+                    <div class="content">
+                        <h3>Effortless editing</h3>
+                        <p>Add your experience, education and skills with a simple, 
+                        intuitive editing experience.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="icon">↓</div>
+                    <div class="content">
+                        <h3>Ready-to-share resume</h3>
+                        <p>Prepare your resume for applications and export a 
+                        polished PDF when you're ready.</p>
+                    </div>
+                </section>
             </section>
         </section>
+        <footer>
+            <a href="index.html">
+                <div class="logo">
+                    <h2>S</h2><h1>Smart<span class="head-grey">Resume</span></h1>
+                </div>
+            </a>
+            <p>Designed for your next opportunity.</p>
+            <span class="foot-span">© 2026 Smart Resume Builder</span>
+        </footer>
     </main>
+    <script src="template.js"></script>
 </body>
 </html>
