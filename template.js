@@ -1,8 +1,11 @@
-
 document.querySelectorAll(".choose").forEach(button => {
     button.addEventListener("click", () => {
-        console.log(button.dataset.template);
-        sessionStorage.setItem("selectedTemplate",button.dataset.template);
-        window.location.href = "editor.html";
+        const template = button.dataset.template;
+        const allowedTemplates = ["modern","minimal","developer"];
+        if (!allowedTemplates.includes(template)) {
+            return;
+        }
+        window.location.href =`editor.html?template=${encodeURIComponent(template)}`;
     });
 });
+
