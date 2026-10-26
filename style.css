@@ -675,6 +675,92 @@ footer .foot-span, footer p{
     margin-bottom: 20px;
 }
 
+.resume-custom {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 794px;
+    min-height: 1123px;
+    margin: 0 auto;
+    padding: 42px;
+    background: #fff;
+    color: #252525;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.custom-header {
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    overflow-wrap: anywhere;
+}
+
+.custom-header h1 {
+    margin: 0 0 5px;
+    font-size: 30px;
+}
+
+.custom-header p {
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+.custom-sortable {
+    min-height: 300px;
+}
+
+.custom-resume-section {
+    margin-bottom: 22px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+.custom-resume-section:hover {
+    border-color: #c9d5e8;
+    background: #f8faff;
+}
+
+.custom-resume-section h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 6px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.drag-handle {
+    flex-shrink: 0;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #4263a5;
+    cursor: grab;
+    user-select: none;
+}
+
+.drag-handle:active {
+    cursor: grabbing;
+}
+
+.section-placeholder {
+    height: 65px;
+    margin-bottom: 22px;
+    border: 2px dashed #7c94c5;
+    border-radius: 5px;
+    background: #edf2ff;
+}
+
+.custom-resume-section p,
+.custom-resume-section li {
+    font-size: 12px;
+}
+
 /* Resume Editer Style */
 
 .resume-main {
@@ -844,6 +930,7 @@ footer .foot-span, footer p{
     background: #ffe2e2;
 }
 
+
 .editor-actions button {
     flex: 1;
     min-height: 42px;
@@ -871,75 +958,6 @@ footer .foot-span, footer p{
     transform: translateY(-2px);
 }
 
-.bot{
-    color: #ffffff;
-    background: linear-gradient(135deg, #557dff, #7853ed);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 22%;
-    bottom: 10%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.bot:hover{
-    transform: translateY(-3px);
-}
-
-.chat{
-    width: 23vw;
-    height: 50vh;
-    background-color: white;
-    color: black;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid #f0f2f8;
-    display: none;
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-}
-
-.chat .chatHeader{
-    width: 100%;
-    height: 13%;
-    border-bottom: 1px solid #f0f2f8;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 1%;
-}
-
-.chat .chatHeader .chatLogo{
-    color: #ffffff;
-    background: linear-gradient(135deg, #557dff, #7853ed);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.chatMain{
-    width: 100%;
-    height: 74%;
-}
-
-.chatBar{
-    width: 100%;
-    height: 13%;
-    border-top: 1px solid #f0f2f8;
-}
-
-
 .get-started,
 .create-resume,
 .choose,
@@ -948,11 +966,7 @@ footer .foot-span, footer p{
     position: relative;
     overflow: hidden;
     isolation: isolate;
-    transition:
-        transform .3s var(--ease-smooth),
-        box-shadow .3s ease,
-        border-color .3s ease,
-        background-color .3s ease;
+    transition: transform .3s var(--ease-smooth),box-shadow .3s ease,border-color .3s ease,background-color .3s ease;
 }
 
 .get-started:hover,
@@ -1048,10 +1062,7 @@ footer .foot-span, footer p{
     box-shadow: 0 5px 20px rgba(45, 62, 120, .035);
     overflow: hidden;
     isolation: isolate;
-    transition:
-        transform .45s var(--ease-smooth),
-        box-shadow .4s ease,
-        border-color .3s ease;
+    transition: transform .45s var(--ease-smooth), box-shadow .4s ease, border-color .3s ease;
     animation: cardEnter .75s var(--ease-smooth) both;
 }
 
@@ -1087,10 +1098,7 @@ footer .foot-span, footer p{
 }
 
 .features .card-container .card .icon {
-    transition:
-        transform .4s var(--ease-smooth),
-        background-color .3s ease,
-        box-shadow .3s ease;
+    transition: transform .4s var(--ease-smooth),background-color .3s ease,box-shadow .3s ease;
 }
 
 .features .card-container .card:hover .icon {
@@ -1151,48 +1159,6 @@ footer .foot-span, footer p{
     transform: scale(1.035);
 }
 
-.bot {
-    z-index: 20;
-    border: 1px solid rgba(255, 255, 255, .35);
-    box-shadow:
-        0 8px 25px rgba(85, 93, 225, .28),
-        inset 0 1px 0 rgba(255, 255, 255, .3);
-    animation: botFloat 3s ease-in-out infinite;
-    transition:
-        transform .3s var(--ease-smooth),
-        box-shadow .3s ease;
-}
-
-.bot:hover {
-    transform: translateY(-5px) scale(1.06);
-    box-shadow: 0 14px 35px rgba(85, 93, 225, .35);
-    animation-play-state: paused;
-}
-
-.bot:active {
-    transform: scale(.94);
-}
-
-.chat {
-    z-index: 19;
-    box-shadow: 0 20px 65px rgba(30, 40, 90, .18);
-    transform-origin: bottom right;
-    border-color: #e5eaff;
-}
-
-.chat[style*="display: block"] {
-    animation: chatEnter .3s var(--ease-smooth) both;
-}
-
-.chat .chatHeader {
-    background: linear-gradient(110deg, #fff, #f6f7ff);
-}
-
-.chat .chatHeader .chatLogo {
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(85, 125, 255, .2);
-}
-
 footer {
     border-top: 1px solid rgba(230, 234, 245, .7);
 }
@@ -1201,15 +1167,46 @@ footer a {
     transition: color .25s ease;
 }
 
-@media print{
-    header,.editor,.bot{
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #resume-section,
+    #resume-section * {
+        visibility: visible;
+    }
+
+    #resume-section {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+        background: #ffffff;
+    }
+
+    #resume-section > .resume {
+        width: 100%;
+        min-height: 0;
+        box-shadow: none;
+    }
+
+    .resume-custom .custom-section-heading {
+        border-bottom: none;
+    }
+
+    .resume-custom .custom-drag-handle,
+    .resume-custom .custom-remove-section {
         display: none;
     }
 
-    .resume-section{
-        width: 100%;
-        height: 100%;
-        box-shadow: none;
+    .resume-custom .custom-resume-section {
+        border-color: transparent;
+        padding: 0;
+        margin-bottom: 16px;
+        break-inside: avoid;
     }
 }
 
@@ -1552,35 +1549,51 @@ footer a {
     }
 }
 
-@media screen and (max-width: 767px) {
-    .hero .image-container {
-        animation-name: fadeInUp;
+@media (max-width: 650px) {
+    .resume-main {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 
-    .features .card-container .card:hover {
-        transform: translateY(-4px);
+    .section-toolbox {
+        width: 100%;
+        max-height: none;
+        padding: 16px;
+        border-right: none;
+        border-bottom: 1px solid #e5eaf5;
     }
 
-    .templates-container .template-cards:hover {
-        transform: translateY(-3px);
+    .section-toolbox > p {
+        margin-bottom: 12px;
     }
 
-    .bot {
-        width: 54px;
-        height: 54px;
-        right: 16px;
-        bottom: 18px;
+    .section-toolbox .section-card {
+        width: 100%;
+        min-height: 56px;
     }
 
-    .chat {
-        width: min(90vw, 360px);
-        height: min(65vh, 520px);
-        right: 5%;
-        bottom: 85px;
+    .resume-section {
+        width: 100%;
+        padding: 15px 10px;
+        overflow-x: auto;
+        overflow-y: visible;
     }
 
-    .chat .chatHeader {
-        min-height: 58px;
+    .resume-section > .resume-custom {
+        width: 100%;
+        min-width: 0;
+        min-height: 700px;
+        padding: 16px;
+    }
+
+    .resume-custom .custom-resume-section {
+        padding: 9px;
+    }
+
+    .resume-main > .editor {
+        width: 100%;
+        padding: 20px 14px;
     }
 }
 
@@ -1652,29 +1665,6 @@ footer a {
     }
 }
 
-@keyframes botFloat {
-    0%, 100% {
-        translate: 0 0;
-    }
-    50% {
-        translate: 0 -5px;
-    }
-}
-
-@keyframes chatEnter {
-    from {
-        opacity: 0;
-        transform: translateY(12px) scale(.96);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-
-
-
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -1686,7 +1676,6 @@ footer a {
     }
 }
 
-
 @media (hover: none) {
     .features .card-container .card:hover,
     .templates-container .template-cards:hover,
@@ -1696,5 +1685,319 @@ footer a {
 
     .features .card-container .card:hover::before {
         transform: scaleX(0);
+    }
+}
+
+body.custom-editor .resume-main {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr) 320px;
+    width: 100%;
+    height: 90%;
+    min-height: 0;
+    overflow: hidden;
+    background: #f6f8fc;
+    gap: 0;
+}
+
+/* Toolbox container */
+body.custom-editor #section-toolbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
+    padding: 22px 14px;
+    background: #ffffff;
+    border-right: 1px solid #e8ecf5;
+    overflow-y: auto;
+}
+
+body.custom-editor #section-toolbox[hidden] {
+    display: none !important;
+}
+
+body.custom-editor #section-toolbox h2,
+body.custom-editor #section-toolbox h3 {
+    margin: 0;
+    color: #202b42;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+body.custom-editor #section-toolbox p {
+    color: #8791a5;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+body.custom-editor #section-toolbox .section-list,
+body.custom-editor #section-toolbox .toolbox-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Individual section cards */
+body.custom-editor #section-toolbox .section-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 46px;
+    padding: 11px 12px;
+
+    color: #475467;
+    background: #ffffff;
+    border: 1px solid #edf0f6;
+    border-radius: 9px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+
+    cursor: pointer;
+    transition: background .2s ease,
+                border-color .2s ease,
+                color .2s ease,
+                transform .2s ease;
+}
+
+body.custom-editor #section-toolbox .section-card:hover {
+    color: #4169f5;
+    background: #f3f6ff;
+    border-color: #dce5ff;
+    transform: translateX(3px);
+}
+
+body.custom-editor #section-toolbox .section-card:active {
+    transform: scale(.98);
+}
+
+body.custom-editor #section-toolbox .section-card:focus-visible {
+    outline: 2px solid #557dff;
+    outline-offset: 2px;
+}
+
+body.custom-editor #section-toolbox .section-card .icon,
+body.custom-editor #section-toolbox .section-card svg {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: #7b8bb0;
+}
+
+body.custom-editor #section-toolbox .section-card:hover .icon,
+body.custom-editor #section-toolbox .section-card:hover svg {
+    color: #4169f5;
+}
+
+/* Resume preview area */
+body.custom-editor .resume-section {
+    width: auto;
+    min-width: 0;
+    height: 100%;
+    padding: 30px;
+    display: block;
+    overflow: auto;
+    background: #edf1ff;
+}
+
+body.custom-editor .resume-section > .resume-custom {
+    width: 100%;
+    max-width: 794px;
+    min-height: 1123px;
+    height: max-content;
+    margin: 0 auto;
+    padding: 42px;
+    background: #ffffff;
+    box-shadow: 0 8px 35px rgba(42, 57, 100, .12);
+}
+
+/* Custom section cards inside the resume */
+body.custom-editor .custom-canvas {
+    min-height: 300px;
+}
+
+body.custom-editor .custom-resume-section {
+    margin-bottom: 18px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    transition: background .2s ease,
+                border-color .2s ease;
+}
+
+body.custom-editor .custom-resume-section:hover {
+    border-color: #dce4f5;
+    background: #f8faff;
+}
+
+body.custom-editor .custom-section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dfe4ed;
+    color: #263650;
+    font-size: 14px;
+    letter-spacing: .7px;
+}
+
+body.custom-editor .custom-drag-handle {
+    flex-shrink: 0;
+    color: #557dff;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: grab;
+    user-select: none;
+}
+
+body.custom-editor .custom-drag-handle:active {
+    cursor: grabbing;
+}
+
+body.custom-editor .custom-remove-section {
+    padding: 5px 8px;
+    color: #d64545;
+    background: #fff1f1;
+    border: 1px solid #ffdddd;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+body.custom-editor .custom-remove-section:hover {
+    background: #ffe4e4;
+}
+
+body.custom-editor .custom-section-placeholder {
+    min-height: 60px;
+    margin-bottom: 18px;
+    background: #edf2ff;
+    border: 2px dashed #7c94c5;
+    border-radius: 6px;
+}
+
+/* Right-side editor panel */
+body.custom-editor .editor {
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    height: 100%;
+    overflow-y: auto;
+    background: #ffffff;
+    border-left: 1px solid #e8ecf5;
+}
+
+/* Responsive layout */
+@media (max-width: 1100px) {
+    body.custom-editor .resume-main {
+        grid-template-columns: 185px minmax(0, 1fr) 290px;
+    }
+
+    body.custom-editor .resume-section {
+        padding: 18px;
+    }
+
+    body.custom-editor .resume-section > .resume-custom {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    body.custom-editor .resume-main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+        overflow: visible;
+    }
+
+    body.custom-editor #section-toolbox {
+        position: static;
+        padding: 16px;
+        border-right: none;
+        border-bottom: 1px solid #e8ecf5;
+    }
+
+    body.custom-editor #section-toolbox .section-list,
+    body.custom-editor #section-toolbox .toolbox-items {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    body.custom-editor #section-toolbox .section-card {
+        min-height: 44px;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    body.custom-editor .resume-section {
+        width: 100%;
+        height: auto;
+        padding: 16px 10px;
+        overflow: auto;
+    }
+
+    body.custom-editor .resume-section > .resume-custom {
+        width: 100%;
+        min-height: 700px;
+        padding: 18px;
+    }
+
+    body.custom-editor .editor {
+        width: 100%;
+        height: auto;
+        padding: 22px 16px;
+        border-left: none;
+        border-top: 1px solid #e8ecf5;
+        overflow: visible;
+    }
+}
+
+/* Print only the resume */
+@media print {
+    body.custom-editor .resume-main {
+        display: block;
+        height: auto;
+        overflow: visible;
+    }
+
+    body.custom-editor #section-toolbox,
+    body.custom-editor .editor {
+        display: none !important;
+    }
+
+    body.custom-editor #resume-section {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+        background: #ffffff;
+    }
+
+    body.custom-editor .resume-section > .resume-custom {
+        width: 100%;
+        max-width: none;
+        min-height: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    body.custom-editor .custom-drag-handle,
+    body.custom-editor .custom-remove-section {
+        display: none !important;
+    }
+
+    body.custom-editor .custom-resume-section {
+        padding: 0;
+        border-color: transparent;
+        background: transparent;
+        break-inside: avoid;
     }
 }
