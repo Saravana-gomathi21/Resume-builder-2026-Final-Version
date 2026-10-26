@@ -346,10 +346,14 @@ function createEntry(type, values = {}) {
             container.remove();
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
             alert("At least one entry is required.");
 =======
             alert("Minimum On Field is Required !");
 >>>>>>> 44c25e3 (Final UI)
+=======
+            alert("At least one entry is required.");
+>>>>>>> d917ad6 (Final Version)
         }
 
         updateResume();
@@ -801,6 +805,7 @@ function initializeEditor() {
         printButton.addEventListener("click", printResume);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 });
 
@@ -821,6 +826,8 @@ function printResume(){
         },x : 1, y : 1, width : 200, windowWidth : 750
     })
 >>>>>>> 44c25e3 (Final UI)
+=======
+>>>>>>> d917ad6 (Final Version)
 }
 
 document.querySelector(".bot")?.addEventListener("click", event => {
@@ -830,4 +837,8 @@ document.querySelector(".bot")?.addEventListener("click", event => {
     if (chat) chat.style.display = "block";
 });
 
+<<<<<<< HEAD
 initializeEditor();
+=======
+initializeEditor();
+>>>>>>> d917ad6 (Final Version)
