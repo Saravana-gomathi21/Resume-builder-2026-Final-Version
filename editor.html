@@ -20,6 +20,52 @@
             </a>
         </header>
         <section class="resume-main">
+            <aside class="section-toolbox" id="section-toolbox">
+                <h2>Add sections</h2>
+                <p>Choose a section to add it to your resume.</p>
+
+                <button type="button" class="section-card" data-section-add="profile">
+                    <span>👤</span>
+                    <span><strong>Profile</strong><small>Name and contact details</small></span>
+                    <b>+</b>
+                </button>
+
+                <button type="button" class="section-card" data-section-add="summary">
+                    <span>✍️</span>
+                    <span><strong>Summary</strong><small>Professional introduction</small></span>
+                    <b>+</b>
+                </button>
+
+                <button type="button" class="section-card" data-section-add="skills">
+                    <span>⚙️</span>
+                    <span><strong>Skills</strong><small>Technical skills</small></span>
+                    <b>+</b>
+                </button>
+
+                <button type="button" class="section-card" data-section-add="education">
+                    <span>🎓</span>
+                    <span><strong>Education</strong><small>Academic qualifications</small></span>
+                    <b>+</b>
+                </button>
+
+                <button type="button" class="section-card" data-section-add="experience">
+                    <span>💼</span>
+                    <span><strong>Experience</strong><small>Work history</small></span>
+                    <b>+</b>
+                </button>
+
+                <button type="button" class="section-card" data-section-add="project">
+                    <span>📁</span>
+                    <span><strong>Projects</strong><small>Your projects</small></span>
+                    <b>+</b>
+                </button>
+
+                <button type="button" class="section-card" data-section-add="languages">
+                    <span>🌐</span>
+                    <span><strong>Languages</strong><small>Languages you know</small></span>
+                    <b>+</b>
+                </button>
+            </aside>
             <section class="resume-section" id="resume-section">
 
             </section>
@@ -116,7 +162,7 @@
                 <h2>Ria</h2>
             </section>
             <section class="ChatMain">
-                
+
             </section>
             <section class="chatBar"></section>
         </section>
@@ -126,13 +172,15 @@
     <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script><script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
     <script>
-        $("body").on("click",".chat",function(){
+        $("body").on("click", ".chat", function () {
             $(".chat").draggable();
         })
         $(".bot").draggable();
     </script>
 </body>
+
 </html>
