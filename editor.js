@@ -830,6 +830,10 @@ function printResume(){
 >>>>>>> d917ad6 (Final Version)
 }
 
+window.addEventListener("beforeunload",(event)=>{
+    event.preventDefault();
+})
+
 document.querySelector(".bot")?.addEventListener("click", event => {
     event.currentTarget.style.display = "none";
 
